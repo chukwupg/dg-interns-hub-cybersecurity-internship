@@ -1,7 +1,7 @@
 # DG Interns Hub: Week 1
 
 ## Lab Setup, Linux and Networking Foundations
-**Intern:** Chukwu PraiseGod 
+**Intern:** CHUKWU PRAISEGOD 
 
 **Submission date:** 22 October 2026
 
@@ -92,9 +92,9 @@ Find it here: [Cheat Sheet](/Cheat%20Sheet/)
 - Concept post: "SOC analyst vs penetration tester: what is the difference?" (5 bullet points)
 - Weekly post: lab setup screenshot and key learnings
 - Link 1: [SOC analyst vs penetration tester: what is the difference?](https://lnkd.in/p/e4nR3qS8)
-- Link 2: 
+- Link 2: [Lab setup screenshot and key learnings](https://lnkd.in/p/eTaysRtg)
 
-## Lessons Learned
+## Key Learnings
 - Isolate vulnerable labs and never bridge them to a real network.
 - Permissions are security: one wrong `chmod` can expose or lock a folder.
 - Every open port is an attack surface; check with `ss -tulpn` or automated tools when permitted.
