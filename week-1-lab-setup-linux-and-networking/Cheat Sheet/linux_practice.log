@@ -1,0 +1,235 @@
+Script started on 2026-10-19 02:03:43+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="96" LINES="30"]
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sud[K[K[Kwhoami
+[?2004l]133;C\]666;vte.shell.preexec!\bob
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo u[Kadduser alice
+[?2004l]133;C\]666;vte.shell.preexec!\[sudo: authenticate] Password: ****    
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for alice
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] 
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo adduser alice[K[K[K[K[Kdawg[K[K[K[Kjohn
+[?2004l]133;C\]666;vte.shell.preexec!\New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for john
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] 
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo adduser john[K[K[K[Kcarol
+[?2004l]133;C\]666;vte.shell.preexec!\New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for carol
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] 
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo groupadd developers
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo groupadd developers[K[K[K[K[K[K[K[K[K[Kanalysts
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [7msudo usermod -aG developers alice[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo usermod -aG developers alice
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo usermod -aG developers alice[K[K[K[K[Kjohn
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo usermod -aG developers john[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kanalysts john
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo usermod -aG analysts john[K[K[K[Kcarol
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ id john
+[?2004l]133;C\]666;vte.shell.preexec!\uid=1002(john) gid=1002(john) groups=1002(john),100(users),1004(developers),1005(analysts)
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ getent group developers
+[?2004l]133;C\]666;vte.shell.preexec!\developers:x:1004:alice,john
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ tail -4 /etc/passwd
+[?2004l]133;C\]666;vte.shell.preexec!\bob:x:1000:1000:Ubuntu:/home/bob:/bin/bash
+alice:x:1001:1001:,,,:/home/alice:/bin/bash
+john:x:1002:1002:,,,:/home/john:/bin/bash
+carol:x:1003:1003:,,,:/home/carol:/bin/bash
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo ma[Kkdir /srv/shared
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo chown root:developers /srv/shared
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo chmod 3770 /srv/shared
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ ls -ld /r[Ksrv/shared
+[?2004l]133;C\]666;vte.shell.preexec!\drwxrws--T 2 root developers 4096 Oct 19 02:13 [0m[37;44m/srv/shared[0m
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudp[Ko -u alice touch /srv/shared [K/alice_notes.txt
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo -u alice touch /srv/shared/alice_notes.txt[C[C[1P[1P[1P[1P[1P[1@j[1@o[1@h[1@n[1P[1P[1P[1P[1P[1@j[1@o[1@h[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo -u carol ls /srv/shared
+[?2004l]133;C\]666;vte.shell.preexec!\ls: cannot open directory '/srv/shared': Permission denied
+]666;vte.shell.postexec=2\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ ls -l /srv/shared
+[?2004l]133;C\]666;vte.shell.preexec!\ls: cannot open directory '/srv/shared': Permission denied
+]666;vte.shell.postexec=2\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ ls -l /srv/shared[1@d[1P[1@s[1@u[1@d[1@o[1@ [C[C[C[C[C[1@a
+[?2004l]133;C\]666;vte.shell.preexec!\total 8
+drwxrws--T 2 root  developers 4096 Oct 19 02:16 .
+drwxr-xr-x 3 root  root       4096 Oct 19 02:13 ..
+-rw-r--r-- 1 alice developers    0 Oct 19 02:15 alice_notes.txt
+-rw-r--r-- 1 john  developers    0 Oct 19 02:16 john_notes.txt
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [7mfind /etc -name "*.conf" -type f 2>/dev/null | head[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /etc -name "*.conf" -type f 2>/dev/null | head
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l]133;C\]666;vte.shell.preexec!\/etc/deluser.conf
+/etc/rsyslog.conf
+/etc/PackageKit/Vendor.conf
+/etc/PackageKit/PackageKit.conf
+/etc/dhcpcd.conf
+/etc/locale.conf
+/etc/cracklib/cracklib.conf
+/etc/nsswitch.conf
+/etc/debconf.conf
+/etc/adduser.conf
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [7mfind / -perm -4000 -type f 2>/dev/null[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind / -perm -4000 -type f 2>/dev/null
+[?2004l]133;C\]666;vte.shell.preexec!\/snap/core24/1587/usr/bin/chfn
+/snap/core24/1587/usr/bin/chsh
+/snap/core24/1587/usr/bin/gpasswd
+/snap/core24/1587/usr/bin/mount
+/snap/core24/1587/usr/bin/newgrp
+/snap/core24/1587/usr/bin/passwd
+/snap/core24/1587/usr/bin/su
+/snap/core24/1587/usr/bin/sudo
+/snap/core24/1587/usr/bin/umount
+/snap/core24/1587/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core24/1587/usr/lib/openssh/ssh-keysign
+/snap/core24/1587/usr/lib/polkit-1/polkit-agent-helper-1
+/usr/bin/chsh
+/usr/bin/mount
+/usr/bin/chfn
+/usr/bin/fusermount3
+/usr/bin/gpasswd
+/usr/bin/su
+/usr/bin/ntfs-3g
+/usr/bin/passwd
+/usr/bin/umount
+/usr/bin/vmware-user-suid-wrapper
+/usr/bin/pkexec
+/usr/bin/sudo.ws
+/usr/sbin/pppd
+/usr/lib/vmware-tools/bin32/vmware-user-suid-wrapper
+/usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+/usr/lib/openssh/ssh-keysign
+/usr/lib/cargo/bin/su
+/usr/lib/cargo/bin/sudo
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+]666;vte.shell.postexec=1\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [7mgrep -i "alice" /etc/passwd[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -i "alice" /etc/passwd
+[?2004l]133;C\]666;vte.shell.preexec!\[01;31m[Kalice[m[K:x:1001:1001:,,,:/home/[01;31m[Kalice[m[K:/bin/bash
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [7mgrep -r "PermitRootLogin" /etc/ssh/ 2>/dev/null[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -r "PermitRootLogin" /etc/ssh/ 2>/dev/null
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=2\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [7mps aux | head[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps aux | head
+[?2004l]133;C\]666;vte.shell.preexec!\USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.6  0.6  25656 16264 ?        Ss   00:05   0:55 /usr/lib/systemd/systemd --switched-root --system --deserialize=51 auto automatic-ubiquity noprompt
+root           2  0.0  0.0      0     0 ?        S    00:05   0:01 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    00:05   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   00:05   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   00:05   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   00:05   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   00:05   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   00:05   0:00 [kworker/R-netns]
+root          12  0.0  0.0      0     0 ?        I    00:05   0:00 [kworker/u512:0]
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [7mps -ef | grep ssh[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -ef | grep ssh
+[?2004l]133;C\]666;vte.shell.preexec!\bob         3344    3046  0 00:09 ?        00:00:00 /usr/libexec/gcr-[01;31m[Kssh[m[K-agent --base-dir /run/user/1000/gcr
+bob         3346    3046  0 00:09 ?        00:00:00 /usr/bin/[01;31m[Kssh[m[K-agent -D
+bob        10524   10032  0 02:28 pts/1    00:00:00 grep --color=auto [01;31m[Kssh[m[K
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ sudo ss -tulnp
+[?2004l]133;C\]666;vte.shell.preexec!\Netid     State      Recv-Q     Send-Q                           Local Address:Port          Peer Address:Port    Process                                                                                                           
+udp       UNCONN     0          0                                      0.0.0.0:5353               0.0.0.0:*        users:(("avahi-daemon",pid=1065,fd=12))                                                                          
+udp       UNCONN     0          0                               192.168.98.129:3702               0.0.0.0:*        users:(("python3",pid=4624,fd=10))                                                                               
+udp       UNCONN     0          0                              239.255.255.250:3702               0.0.0.0:*        users:(("python3",pid=4624,fd=8))                                                                                
+udp       UNCONN     0          0                                   127.0.0.54:53                 0.0.0.0:*        users:(("systemd-resolve",pid=605,fd=18))                                                                        
+udp       UNCONN     0          0                                127.0.0.53%lo:53                 0.0.0.0:*        users:(("systemd-resolve",pid=605,fd=16))                                                                        
+udp       UNCONN     0          0                                    127.0.0.1:323                0.0.0.0:*        users:(("chronyd",pid=1193,fd=4))                                                                                
+udp       UNCONN     0          0                                      0.0.0.0:41526              0.0.0.0:*        users:(("python3",pid=4624,fd=9))                                                                                
+udp       UNCONN     0          0                                         [::]:5353                  [::]:*        users:(("avahi-daemon",pid=1065,fd=13))                                                                          
+udp       UNCONN     0          0              [fe80::b48e:e5:d2c3:16fd]%ens34:3702                  [::]:*        users:(("python3",pid=4624,fd=13))                                                                               
+udp       UNCONN     0          0                              [ff02::c]%ens34:3702                  [::]:*        users:(("python3",pid=4624,fd=11))                                                                               
+udp       UNCONN     0          0                                        [::1]:323                   [::]:*        users:(("chronyd",pid=1193,fd=5))                                                                                
+udp       UNCONN     0          0                                            *:57739                    *:*        users:(("python3",pid=4624,fd=12))                                                                               
+tcp       LISTEN     0          4096                                127.0.0.54:53                 0.0.0.0:*        users:(("systemd-resolve",pid=605,fd=19))                                                                        
+tcp       LISTEN     0          4096                                 127.0.0.1:631                0.0.0.0:*        users:(("cupsd",pid=8199,fd=7))                                                                                  
+tcp       LISTEN     0          4096                             127.0.0.53%lo:53                 0.0.0.0:*        users:(("systemd-resolve",pid=605,fd=17))                                                                        
+tcp       LISTEN     0          4096                                     [::1]:631                   [::]:*        users:(("cupsd",pid=8199,fd=6))                                                                                  
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ 
+[?2004l]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ crontab -e
+[?2004l]133;C\]666;vte.shell.preexec!\no crontab for bob - using an empty one
+Select an editor.  To change later, run select-editor again.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.tiny
+  3. /bin/ed
+
+Choose 1-3 [1]: 1
+[?2004h[?1049h[22;0;0t[1;51r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[49;52H(B[0;7m[ Reading... ](B[m[49;50H(B[0;7m[ Read 23 lines ](B[m[H(B[0;7m  GNU nano 8.7.1                                /tmp/crontab.Rqza8o/crontab                                         [1;115H(B[m[50d(B[0;7m^G(B[m Help[50;17H(B[0;7m^O(B[m Write Out    (B[0;7m^F(B[m Where Is     (B[0;7m^K(B[m Cut[50;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[51d(B[0;7m^X(B[m Exit[51;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[51;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[2d[36m# Edit this file to introduce tasks to be run by cron.[3d# [4d# Each task to run has to be defined through a single line[5d# indicating with different fields when the task will be run[6d# and what command to run for the task[7d# [8d# To define the time you can provide concrete values for[9d# minute (m), hour (h), day of month (dom), month (mon),[10d# and day of week (dow) or use '*' in these fields (for 'any').[11d# [12d# Notice that tasks will be started based on the cron's system[13d# daemon's notion of time and timezones.[14d# [15d# Output of the crontab jobs (including errors) is sent through[16d# email to the user the crontab file belongs to (unless redirected).[17d# [18d# For example, you can run a backup of all your user accounts[19d# at 5 a.m every week with:[20d# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/[21d# [22d# For more information see the manual pages of crontab(5) and cron(8)[23d# [24d# m h  dom mon dow   command[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[49d[K[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;77H(B[0;7m*[115G(B[m[25d* * * * * date >> /tmp/cron_test.log[?12l[?25h[?25l[49d(B[0;7mSave modified buffer?                                                                                               [50;1H Y(B[m Yes[K[51d(B[0;7m N(B[m No  [51;18H(B[0;7mC(B[m Cancel[K[49;23H[?12l[?25h[?25l[50d(B[0;7m^G(B[m Help[50;24H(B[0;7mM-D(B[m DOS Format[50;47H(B[0;7mM-A(B[m Append[50;70H(B[0;7mM-B(B[m Backup File[50;93H(B[0;7m^T(B[m Browse[51d(B[0;7m^C(B[m Cancel[17G       (B[0;7mM-M(B[m Mac Format[51;47H(B[0;7mM-P(B[m Prepend[51;70H(B[0;7m^Q(B[m Discard buffer[50;102H[A(B[0;7mWrite to File: /tmp/crontab.Rqza8o/crontab(B[m[?12l[?25h[?25l[49;51H[1K (B[0;7m[ Writing... ](B[m[K[1;77H(B[0;7m [115G(B[m[49;50H(B[0;7m[ Wrote 24 lines ](B[m[J[51d[?12l[?25h[51;1H[?1049l[23;0;0t[?1l>[?2004lcrontab: installing new crontab
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ crontab -l
+[?2004l]133;C\]666;vte.shell.preexec!\# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+* * * * * date >> /tmp/cron_test.log
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ system ctl[K[K[K[K[K[K[K[K[K[Ksudo systemctl [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksystemctl status cron [K
+[?2004l]133;C\]666;vte.shell.preexec!\[?1h=[0;1;32m●[0m cron.service - Regular background program processing daemon[m
+     Loaded: loaded (]8;;file://Ubuntu-Machine/usr/lib/systemd/system/cron.service\/usr/lib/systemd/system/cron.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m]8;;\
+     Active: [0;1;32mactive (running)[0m since Sun 2026-10-18 01:08:30 WAT; 1 day 1h ago[m
+ Invocation: 70291e36583b4e3fa270028f770269a2[m
+       Docs: ]8;;man:cron(8)\man:cron(8)]8;;\[m]8;;\
+   Main PID: 1105 (cron)[m
+      Tasks: 1[0;38:5:245m (limit: 1348)[0m[m
+     Memory: 700K (peak: 4M)[m
+        CPU: 11.288s[m
+     CGroup: /system.slice/cron.service[m
+             └─[0;38:5:245m1105 /usr/sbin/cron -f -P[0m[m
+[m
+Oct 18 03:17:01 Ubuntu-Machine CRON[7248]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)[m
+Oct 18 03:17:01 Ubuntu-Machine CRON[7246]: pam_unix(cron:session): session closed for user root[m
+Oct 18 03:30:01 Ubuntu-Machine CRON[7299]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=[m[7m>[27m
+Oct 18 03:30:01 Ubuntu-Machine CRON[7301]: (root) CMD (test -e /run/systemd/system || SERVICE_MODE=1 /usr/libexec/e[m[7m>[27m
+Oct 18 03:30:01 Ubuntu-Machine CRON[7299]: pam_unix(cron:session): session closed for user root[m
+Oct 19 02:17:01 Ubuntu-Machine CRON[10341]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid[m[7m>[27m
+Oct 19 02:17:01 Ubuntu-Machine CRON[10343]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)[m
+Oct 19 02:17:01 Ubuntu-Machine CRON[10341]: pam_unix(cron:session): session closed for user root[m
+Oct 19 02:44:01 Ubuntu-Machine CRON[10750]: pam_unix(cron:session): session opened for user bob(uid=1000) by bob(ui[m[7m>[27m
+Oct 19 02:44:01 Ubuntu-Machine CRON[10750]: pam_unix(cron:session): session closed for user bob[m
+[7mlines 1-22/22 (END)[27m[K[K[?1l>]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ cat /tmp/r[Kcron_test.log
+[?2004l]133;C\]666;vte.shell.preexec!\Mon Oct 19 02:44:01 AM WAT 2026
+Mon Oct 19 02:45:01 AM WAT 2026
+Mon Oct 19 02:46:01 AM WAT 2026
+]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ [K]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ crontab -r
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://Ubuntu-Machine/home/bob\]0;bob@Ubuntu-Machine:~\]666;vte.shell.precmd!\[?2004h]0;bob@Ubuntu-Machine: ~[01;32mbob@Ubuntu-Machine[00m:[01;34m~[00m$ exit
+[?2004l]133;C\]666;vte.shell.preexec!\exit
+
+Script done on 2026-10-19 02:50:24+01:00 [COMMAND_EXIT_CODE="0"]
