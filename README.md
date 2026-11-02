@@ -19,8 +19,9 @@ My weekly labs, notes, writeups and reports from the **DG Interns Hub** cybersec
 ```
 dg-interns-hub-cybersecurity-internship/
 ├── README.md
-├── week-01-lab-linux-networking/
-└── week-02-.../
+├── week-01             
+├── week-02             
+└── week-03             
 ```
 
 Each weekly folder has its own `README.md` that shows that week's structure and deliverables.
