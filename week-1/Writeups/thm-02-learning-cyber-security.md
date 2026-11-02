@@ -28,7 +28,7 @@ Completed the Learning Cyber Security room with 100% progress. The room introduc
 
 ## Evidence
 
-![THM room](/Findings/TryHackMe/learning-cyber-security.png)
+![THM room](/week-1/Findings/TryHackMe/learning-cyber-security.png)
 
 ## Lessons Learned
 - Web application security focuses on identifying and mitigating vulnerabilities that could expose applications and their users to attacks.

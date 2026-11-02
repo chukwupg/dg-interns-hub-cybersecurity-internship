@@ -65,7 +65,7 @@ Completed the Introductory Networking room, which explored how network communica
 
 ## Evidence
 
-![THM Room](/Findings/TryHackMe/introductory-networking.png)
+![THM Room](../Findings/TryHackMe/introductory-networking.png)
 
 ## Lessons Learned
 - The OSI model divides network communication into seven layers, making network operations and troubleshooting easier to understand.

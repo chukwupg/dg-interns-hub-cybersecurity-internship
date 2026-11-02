@@ -17,12 +17,12 @@
 ## How this shows up in my lab
 - The first 4624 I found was **type 5** (a service logon), which is normal background noise.
 
-    ![Logon type 5](/Findings/windows-events/event-viewer-successful-logon-type-5.png)
+    ![Logon type 5](../Findings/windows-events/event-viewer-successful-logon-type-5.png)
 
 - Signing in as the new `labtest` user gave me **type 2**.
 
-    ![Logon type 2](/Findings/windows-events/event-viewer-successful-logon-type-2.png)
+    ![Logon type 2](../Findings/windows-events/event-viewer-successful-logon-type-2.png)
 
 - My failed `net use` attempts were network logons (type 3); my lock-screen failure was logon (type 2).
     
-    Check [failed-4625](/Findings/windows-events/failed-4625.csv)
+    Check [failed-4625](../Findings/windows-events/failed-4625.csv)

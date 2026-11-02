@@ -41,7 +41,7 @@ The Networking Concepts room covered the foundational principles behind communic
 
 ## Evidence
 
-![THM Room](/Findings/TryHackMe/networking-concepts.png)
+![THM Room](../Findings/TryHackMe/networking-concepts.png)
 
 ## Lessons Learned
 - The OSI and TCP/IP models provide frameworks for understanding how data moves between applications and network interfaces.

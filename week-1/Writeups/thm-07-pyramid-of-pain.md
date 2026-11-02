@@ -56,9 +56,9 @@ Completed the Pyramid of Pain room, which explained how different indicators of 
 
 ## Evidence
 
-![Room Practical](/Findings/TryHackMe/pyramid-of-pain-practical.png)
+![Room Practical](../Findings/TryHackMe/pyramid-of-pain-practical.png)
 
-![THM Room](/Findings/TryHackMe/pyramid-of-pain.png)
+![THM Room](../Findings/TryHackMe/pyramid-of-pain.png)
 
 ## Lessons Learned
 - The Pyramid of Pain ranks indicators by the level of difficulty and disruption an adversary experiences when forced to change them.

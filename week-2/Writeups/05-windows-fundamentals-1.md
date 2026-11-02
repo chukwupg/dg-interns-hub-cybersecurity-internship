@@ -1,4 +1,3 @@
-<!-- DRAFT: rewrite in your own words. No room answers or flags. Fill every [[ ]]. -->
 # Windows Fundamentals 1 (TryHackMe)
 
 **Link:** https://tryhackme.com/room/windowsfundamentals1xbx
@@ -20,7 +19,7 @@ Getting comfortable with the Windows desktop, file system, user accounts, UAC an
 | 9. Task Manager | Running applications, processes and system resource monitoring | Explored Task Manager to inspect running applications and processes, monitor CPU and RAM usage, and access detailed system information. Learned to switch from Simple View to the expanded view for more administrative and troubleshooting details. |
 
 ## Screenshot
-![Windows Fundamentals 1 room](/Findings/TryHackMe/windows-fundamentals-1.png)
+![Windows Fundamentals 1 room](../Findings/TryHackMe/windows-fundamentals-1.png)
 
 ## What I Learned
 - Windows editions serve different environments, from personal desktop use to enterprise and server deployments. Understanding the edition and version of a target system helps establish its capabilities and support status.
@@ -39,7 +38,7 @@ Getting comfortable with the Windows desktop, file system, user accounts, UAC an
 - I created `labtest` with `net user` and added it to Administrators (events 4720 and 4732), then signed in as that user (4624, logon type 2).
 
     **Simulation user creation and adding to Administrator group**
-    ![user creation](/Findings/windows-events/simulating-new-user-and-add-administrator.png)
+    ![user creation](../Findings/windows-events/simulating-new-user-and-add-administrator.png)
 
     **Event log**
-    ![4624 logon type 2 log](/Findings/windows-events/event-viewer-successful-logon-type-2.png)
+    ![4624 logon type 2 log](../Findings/windows-events/event-viewer-successful-logon-type-2.png)

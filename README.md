@@ -12,7 +12,7 @@ My weekly labs, notes, writeups and reports from the **DG Interns Hub** cybersec
 |---|---|---|---|---|
 | 1 | Lab setup, Linux and networking foundations | [week-1](/week-1/) | ✅ Completed | https://lnkd.in/p/eTaysRtg |
 | 2 | Network Traffic Analysis, Nmap and Windows Logging | [week-2](/week-2/) | ✅ Completed | https://lnkd.in/p/eUiz8ewE |
-| 3 | - | - | Upcoming | |
+| 3 | Linux Logs, Sysmon, Auditd and Snort Setup | week-3 | In-progress | |
 
 ## Repository structure
 

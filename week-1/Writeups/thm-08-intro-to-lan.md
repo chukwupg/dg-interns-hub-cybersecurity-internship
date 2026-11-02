@@ -31,7 +31,7 @@ The Intro to LAN room introduced how devices are organised and communicate withi
 
 ## Evidence
 
-![THM Room](/Findings/TryHackMe/intro-to-lan.png)
+![THM Room](../Findings/TryHackMe/intro-to-lan.png)
 
 ## Lessons Learned
 - LAN topologies influence network layout, scalability, fault tolerance, and troubleshooting.

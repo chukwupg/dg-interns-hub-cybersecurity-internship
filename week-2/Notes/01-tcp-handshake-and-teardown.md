@@ -29,8 +29,8 @@
 ## How this shows up in my lab
 - I captured the SYN, SYN/ACK, ACK handshake when Kali ran `curl` against Apache on my Ubuntu VM (192.168.98.129). 
 
-    ![Hanshake](/Findings/wireshark/tcp-three-way-handshake.png)
+    ![Hanshake](../Findings/wireshark/tcp-three-way-handshake.png)
 
 - My Nmap `-sS` scan showed a burst of SYN packets with RST replies from closed ports, found with `tcp.flags.syn==1 && tcp.flags.ack==0` (`ubuntu-nmap-scan-traffic.pcapng`).
 
-    ![nmap syn scan](/Findings/nmap/ubuntu/nmap-syn-burst-ubuntu.png)
+    ![nmap syn scan](../Findings/nmap/ubuntu/nmap-syn-burst-ubuntu.png)

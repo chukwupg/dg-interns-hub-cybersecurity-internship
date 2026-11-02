@@ -3,8 +3,7 @@
 **Link:** https://tryhackme.com/room/nmap02
 
 ## Goal
-Understand TCP and UDP ports, TCP flags, and how connect, SYN and UDP scans decide a port's state. [[Rewrite]]
-
+Understand TCP and UDP ports, TCP flags, and how connect, SYN and UDP scans decide a port's state. 
 ## Task-by-task
 | Task | What it covered | My note |
 |---|---|---|
@@ -35,7 +34,7 @@ Understand TCP and UDP ports, TCP flags, and how connect, SYN and UDP scans deci
 
 
 ## Screenshot
-![nmap basic port scans room](/Findings/TryHackMe/nmap-basic-port-scans.png)
+![nmap basic port scans room](../Findings/TryHackMe/nmap-basic-port-scans.png)
 
 ## What I Learned
 
@@ -58,6 +57,6 @@ Understand TCP and UDP ports, TCP flags, and how connect, SYN and UDP scans deci
 ## How this shows up in my lab
 - My -sS scan of 192.168.98.129 showed 3 ports, with Apache on port 80 after I installed it.
 
-    ![ubuntu SYN scan](/Findings/nmap/ubuntu/nmap-tcp-syn-scan.png)
+    ![ubuntu SYN scan](../Findings/nmap/ubuntu/nmap-tcp-syn-scan.png)
 
 - In Wireshark the scan appeared as many SYN packets from Kali, with RST replies from closed ports.

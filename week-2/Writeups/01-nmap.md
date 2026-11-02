@@ -3,7 +3,7 @@
 **Link:** https://tryhackme.com/room/furthernmap 
 
 ## Goal
-Learn the main Nmap switches and scan types, how NSE scripts work, and how scans are tuned around firewalls. [[Rewrite in your own words]]
+Learn the main Nmap switches and scan types, how NSE scripts work, and how scans are tuned around firewalls. 
 
 ## Task-by-task
 | Task | What it covered | My note |
@@ -35,7 +35,7 @@ Learn the main Nmap switches and scan types, how NSE scripts work, and how scans
 
 ## Screenshot
 
-![Nmap](/Findings/TryHackMe/nmap.png)
+![Nmap](../Findings/TryHackMe/nmap.png)
 
 ## What I learned
 ## What I Learned
@@ -53,8 +53,8 @@ Learn the main Nmap switches and scan types, how NSE scripts work, and how scans
 ## How this shows up in my lab
 - I ran -sn, -sS, -sV, -O and -A against my Ubuntu VM (192.168.98.129) and my Windows VM (192.168.98.131) and saved the output with -oN and -oX.
 
-    ![nmap aggressive scan](/Findings/nmap/ubuntu/nmap-aggressive-scan.png)
+    ![nmap aggressive scan](../Findings/nmap/ubuntu/nmap-aggressive-scan.png)
 
 - I captured the -sS scans (`ubuntu-nmap-scan-traffic.pcapng`, `windows-nmap-scan-traffic.pcapng`) and found the SYN burst with `tcp.flags.syn==1 && tcp.flags.ack==0`.
 
-    ![Syn burst](/Findings/nmap/ubuntu/nmap-syn-burst-ubuntu.png)
+    ![Syn burst](../Findings/nmap/ubuntu/nmap-syn-burst-ubuntu.png)

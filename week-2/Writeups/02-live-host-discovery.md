@@ -3,7 +3,7 @@
 **Link:** https://tryhackme.com/room/nmap01
 
 ## Goal
-Learn how to find which hosts are up on a network before port scanning, using different layers of the TCP/IP model. [[Rewrite]]
+Learn how to find which hosts are up on a network before port scanning, using different layers of the TCP/IP model.
 
 ## Task-by-task
 
@@ -34,7 +34,7 @@ Learn how to find which hosts are up on a network before port scanning, using di
 | `nmap -n` / `nmap -R` | Skip / force reverse DNS |
 
 ## Screenshot
-![nmap live host discovery room](/Findings/TryHackMe/live-host-discovery.png)
+![nmap live host discovery room](../Findings/TryHackMe/live-host-discovery.png)
 
 ## What I Learned
 
@@ -54,12 +54,12 @@ Learn how to find which hosts are up on a network before port scanning, using di
 ## How this shows up in my lab
 - I performed `nmap -sn` scan twice from kali on 192.168.98.0/24 network, one when the Ubuntu machine was up and the second was when the Windows machine was up, for each case, I found 2 hosts: Kali IP and my lab machine IPs.
     **Ubuntu**
-    ![Ubuntu host discovery](/Findings/nmap/ubuntu/nmap-host-discovery.png)
+    ![Ubuntu host discovery](../Findings/nmap/ubuntu/nmap-host-discovery.png)
     **Windows**
-    ![Windows host discovery](/Findings/nmap/windows/host-discovery.png)
+    ![Windows host discovery](../Findings/nmap/windows/host-discovery.png)
 
 - Because my VMs share one subnet, discovery used ARP or ICMP
 
 - Reverse DNS ties to my dnsmasq setup on Ubuntu (192.168.98.129), where I resolved `ubuntu.lab`. 
 
-    ![dns resolution](/Findings/wireshark/dns-query.png)
+    ![dns resolution](../Findings/wireshark/dns-query.png)

@@ -38,7 +38,7 @@ Completed the Search Skills room with 100% progress, covering different ways to 
 
 ## Evidence 
 
-![THM search skills proof of completion](/Findings/TryHackMe/search-skills.png)
+![THM search skills proof of completion](/week-1/Findings/TryHackMe/search-skills.png)
 
 ## Lessons Learned
 - Effective cybersecurity research requires knowing where to search, not just how to use a general search engine.

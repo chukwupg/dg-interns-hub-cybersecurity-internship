@@ -66,7 +66,7 @@ Completed the Linux Fundamentals (Pt1) room with 100% progress. The room introdu
 
 ## Evidence 
 
-![THM room](/Findings/TryHackMe/linux-fundamentals.png)
+![THM room](/week-1/Findings/TryHackMe/linux-fundamentals.png)
 
 ## Lessons Learned
 - The terminal provides direct access to Linux system functions without requiring a graphical interface.

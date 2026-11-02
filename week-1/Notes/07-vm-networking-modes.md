@@ -29,4 +29,4 @@
 
 ### Lab Network Diagram
 
-![Network Diagram](/Findings/Network%20Map%20and%20Diagram/network-diagram.png)
+![Network Diagram](../Findings/Network%20Map%20and%20Diagram/network-diagram.png)

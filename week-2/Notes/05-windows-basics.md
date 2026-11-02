@@ -20,12 +20,12 @@
 
 - 7045 was in the **System** log; the rest were in the **Security** log.
 
-    ![7045 dummy service](/Findings/windows-events/event-viewer-dummy-service.png)
+    ![7045 dummy service](../Findings/windows-events/event-viewer-dummy-service.png)
 
 - I created `labtest` with `net user` and added it to Administrators, then deleted it afterwards.
 
-    ![Simulating new user](/Findings/windows-events/simulating-new-user-and-add-administrator.png)
+    ![Simulating new user](../Findings/windows-events/simulating-new-user-and-add-administrator.png)
 
 - I created and deleted a service with `sc.exe`. In PowerShell plain `sc` didn't work because it is an alias for `Set-Content`.
 
-    ![Dummy service creation](/Findings/windows-events/simulating-service-creation.png)
+    ![Dummy service creation](../Findings/windows-events/simulating-service-creation.png)

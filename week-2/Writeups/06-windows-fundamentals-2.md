@@ -18,7 +18,7 @@ Learn the built-in admin tools: system configuration, Computer Management, Syste
 | 8. Registry Editor | Windows Registry structure and configuration data | Introduced the Windows Registry as a hierarchical database containing system, user, application and hardware configuration information. Explored Registry Editor (`regedit`) and the importance of caution when modifying registry entries. |
 
 ## Screenshot
-![Windows Fundamentals 2 room](/Findings/TryHackMe/windows-fundamentals-2.png)
+![Windows Fundamentals 2 room](../Findings/TryHackMe/windows-fundamentals-2.png)
 
 ## What I Learned
 - System Configuration (msconfig) provides advanced troubleshooting options for diagnosing startup problems, configuring boot behaviour and inspecting system services.
@@ -43,7 +43,7 @@ Learn the built-in admin tools: system configuration, Computer Management, Syste
 - I created and deleted a service with `sc.exe` (event 7045).
 
     **Creating a dummy service**
-    ![dummy service simulation](/Findings/windows-events/simulating-service-creation.png)
+    ![dummy service simulation](../Findings/windows-events/simulating-service-creation.png)
 
     **7045 Triggered in event viewer**
-    ![7045 log](/Findings/windows-events/event-viewer-dummy-service.png)
+    ![7045 log](../Findings/windows-events/event-viewer-dummy-service.png)

@@ -23,7 +23,8 @@
 
 ## How this shows up in my lab
 - I generated and found 4625, 4624, 4720, 4732, 7045 and 1102 on my Windows VM. 
-Check [windows-events](/Findings/windows-events/)
+
+    Check [windows-events](../Findings/windows-events/)
 
 - My 4720, then 4732, then 4624 (type 2) sequence for `labtest` is a pattern an analyst would flag.
 

@@ -17,20 +17,20 @@
 ## How this shows up in my lab
 - **DNS:** my `nslookup ubuntu.lab 192.168.98.129` showed a query and response in Wireshark (`full-traffic-capture.pcapng`). Before I set up dnsmasq, queries to 192.168.98.1 failed with "connection refused".
 
-    ![DNS query](/Findings/wireshark/dns-query.png)
+    ![DNS query](../Findings/wireshark/dns-query.png)
 
 - **HTTP:** `curl` from Kali to Apache showed a GET request and response.
-    ![Curl from kali](/Findings/setup/curl.png)
-    ![HTTP GET](/Findings/wireshark/http-get.png)
+    ![Curl from kali](../Findings/setup/curl.png)
+    ![HTTP GET](../Findings/wireshark/http-get.png)
 
 - **ICMP:** `ping` from Kali showed echo request and reply.
 
-    ![Icmp](/Findings/wireshark/icmp-echo.png)
+    ![Icmp](../Findings/wireshark/icmp-echo.png)
 
 - **ARP:** to resolve IP addresses to MAC addresses on the network, host send or broadcast arp request and replies.
 
-    ![ARP](/Findings/wireshark/arp.png)
+    ![ARP](../Findings/wireshark/arp.png)
 
 - **SMB:** consists of the data exchanged between clients and servers using the SMB protocol which confirms inter-process communication across devices on the network. 
 
-    ![SMB](/Findings/wireshark/smb.png)
+    ![SMB](../Findings/wireshark/smb.png)

@@ -34,7 +34,7 @@ I installed Apache on Ubuntu (`sudo apt install apache2`). From Kali I ran `ping
 
 **DNS problem.** `nslookup` against 192.168.98.1 failed with "connection refused" because nothing in the lab was answering DNS on that address. I installed dnsmasq on Ubuntu to resolve `ubuntu.lab`. systemd-resolved already held port 53 on the loopback addresses, so I made dnsmasq listen only on 192.168.98.129. The lookup then worked and produced a clean DNS capture.
 
-**Evidence folder:** [`wireshark`](/Findings/wireshark/)
+**Evidence folder:** [`wireshark`](/week-2/Findings/wireshark/)
 
 ### 3.2 Nmap on my own VMs
 
@@ -46,7 +46,7 @@ tcp.flags.syn==1 && tcp.flags.ack==0
 
 This shows the scan clearly: a burst of SYN packets from Kali to many ports in a short time. A SYN scan never completes the handshake, and closed ports answer with RST. One source probing many ports with no real conversation is the pattern a defender should look for.
 
-**Evidence folder:** [`nmap`](/Findings/nmap/)
+**Evidence folder:** [`nmap`](/week-2/Findings/nmap/)
 
 ### 3.3 Windows events
 
@@ -61,7 +61,7 @@ This shows the scan clearly: a burst of SYN packets from Kali to many ports in a
 
 The first 4624 I found was **logon type 5** (service), which is normal background activity. Signing in as the new test user gave **logon type 2** (interactive). The sequence 4720, 4732, then a type 2 logon for the same account is what an analyst would flag: a new account gets admin rights and logs in straight away.
 
-**Evidence folder:** [`windows-events`](/Findings/windows-events/)
+**Evidence folder:** [`windows-events`](/week-2/Findings/windows-events/)
 
 ### 3.4 PowerShell hunting
 
@@ -103,7 +103,7 @@ I completed six TryHackMe rooms (Nmap, Live Host Discovery, Basic Port Scans, Wi
 - Logon type matters as much as the event ID: type 5 is noise, while type 2 for a brand-new admin account deserves attention.
 - Knowing what is normal in my lab (a baseline) is what makes the odd events easy to spot.
 
-**TryHackMe Evidence Folder:** [`TryHackMe`](/Findings/TryHackMe/)
+**TryHackMe Evidence Folder:** [`TryHackMe`](/week-2/Findings/TryHackMe/)
 
 ## 6. Next steps
 

@@ -39,7 +39,7 @@ The What is Networking? room introduced the fundamentals of computer networking,
 
 ## Evidence
 
-![THM Room](/Findings/TryHackMe/what-is-networking.png)
+![THM Room](/week-1/Findings/TryHackMe/what-is-networking.png)
 
 ## Lessons Learned
 - Networking enables devices to exchange data and share resources through connected systems.

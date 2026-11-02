@@ -55,4 +55,4 @@
 
 ### Evidence 
 
-![ss -tulnp ouput](/Findings/Linux%20Practice/ss-command-output.png)
+![ss -tulnp ouput](../Findings/Linux%20Practice/ss-command-output.png)

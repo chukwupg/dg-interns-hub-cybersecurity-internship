@@ -80,4 +80,4 @@ Reading `ls -l` output: `-rwxr-x---  1 alice developers 120 Oct 19 notes.sh`
 
 ### Evidence
 
-![shared folder permission](/Findings/Linux%20Practice/shared-folder-with-correct-permissions-9-commands.png)
+![shared folder permission](../Findings/Linux%20Practice/shared-folder-with-correct-permissions-9-commands.png)

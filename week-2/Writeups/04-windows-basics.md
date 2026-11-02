@@ -13,7 +13,7 @@ Learn to navigate Windows, manage files, and use essential system tools.
 | 3. Configuring and Securing Windows | Application management, system settings, Task Manager and native Windows security | Learned how to update, install and uninstall applications using Windows Update, trusted installers, Settings and Control Panel. Explored Task Manager for monitoring processes and resource usage, Windows Security for malware scans, and Windows Defender Firewall for managing network profiles and traffic rules. |
 
 ## Screenshot
-![nmap windows basics room](/Findings/TryHackMe/windows-basics.png)
+![nmap windows basics room](../Findings/TryHackMe/windows-basics.png)
 
 ## What I Learned
 
@@ -33,5 +33,5 @@ Learn to navigate Windows, manage files, and use essential system tools.
 ## How this shows up in my lab
 - On my Windows VM I created and deleted a dummy service, opened Event Viewer and inspected the event log.
 
-    ![dummy service](/Findings/windows-events/simulating-service-creation.png)
-    ![event log](/Findings/windows-events/event-viewer-dummy-service.png)
+    ![dummy service](../Findings/windows-events/simulating-service-creation.png)
+    ![event log](../Findings/windows-events/event-viewer-dummy-service.png)
