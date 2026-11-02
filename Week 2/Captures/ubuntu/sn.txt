@@ -1,0 +1,6 @@
+# Nmap 7.95 scan initiated Wed Oct 28 00:23:12 2026 as: nmap -sn -oN sn.txt -oX sn.xml 192.168.98.0/24
+Nmap scan report for 192.168.98.129
+Host is up (0.0031s latency).
+Nmap scan report for 192.168.98.130
+Host is up (0.0023s latency).
+# Nmap done at Wed Oct 28 00:23:26 2026 -- 256 IP addresses (2 hosts up) scanned in 13.39 seconds

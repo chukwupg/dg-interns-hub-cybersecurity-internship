@@ -1,0 +1,13 @@
+# Nmap 7.95 scan initiated Wed Oct 28 00:28:41 2026 as: nmap -sV -oN ubuntu-sV.txt -oX ubuntu-sV.xml 192.168.98.129
+Nmap scan report for 192.168.98.129
+Host is up (0.00038s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 10.2p1 Ubuntu 2ubuntu3.8 (Ubuntu Linux; protocol 2.0)
+53/tcp open  domain  dnsmasq 2.92
+80/tcp open  http    Apache httpd 2.4.66 ((Ubuntu))
+MAC Address: 00:0C:29:04:84:62 (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct 28 00:28:55 2026 -- 1 IP address (1 host up) scanned in 14.40 seconds
