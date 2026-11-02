@@ -10,8 +10,9 @@ My weekly labs, notes, writeups and reports from the **DG Interns Hub** cybersec
 
 | Week | Focus | Folder | Status | LinkedIn post | 
 |---|---|---|---|---|
-| 1 | Lab setup, Linux and networking foundations | [week-01-lab-linux-networking](./week-01-lab-linux-networking) | ✅ Completed | https://lnkd.in/p/eTaysRtg |
-| 2 | - | - | 🔜 Upcoming | | |
+| 1 | Lab setup, Linux and networking foundations | [week-1](/week-1/) | ✅ Completed | https://lnkd.in/p/eTaysRtg |
+| 2 | Network Traffic Analysis, Nmap and Windows Logging | [week-2](/week-2/) | ✅ Completed | https://lnkd.in/p/eUiz8ewE |
+| 3 | - | - | Upcoming | |
 
 ## Repository structure
 

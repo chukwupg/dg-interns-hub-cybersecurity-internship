@@ -34,24 +34,24 @@ DG Interns Hub
 
 - Network: isolated, 192.168.98.0/24.
 - Pings confirmed between the VMs and a clean snapshot taken of each.
-- Evidence: [Findings/Lab Setup](/Findings/Lab%20Setup/).
+- Evidence: [Findings/Lab Setup](/week-1/Findings/Lab%20Setup/).
 
 ## 2. Linux practice (Ubuntu)
 - 3 users (alice, john, carol) and 2 groups (developers, analysts).
 - Shared folder `/srv/shared`, owned by `root:developers`, `chmod 3770`. carol, who is not in the group, got Permission denied.
 - Used `find`, `grep`, `ps`, `ss -tulpn` and a cron job; 33+ commands documented with output.
-- Evidence: [Findings/Linux Practice](/Findings/Linux%20Practice/).
+- Evidence: [Findings/Linux Practice](/week-1/Findings/Linux%20Practice/).
 
 ## 3. Network map
 - IP, gateway and DNS recorded for each VM with `ip a`, `ip route`, `ping`, `traceroute`, `nslookup` and `dig`.
 - On Ubuntu, `ss -tulpn` showed SSH (22) and mDNS (5353) reachable from the network; DNS (53), printing (631) and time sync (323) on localhost only.
-- Diagram: [Findings/Network Map and Diagram](/Findings/Network%20Map%20and%20Diagram/).
+- Diagram: [Findings/Network Map and Diagram](/week-1/Findings/Network%20Map%20and%20Diagram/).
 
 ## 4. OverTheWire Bandit (levels 0 to 10)
 - Completed over SSH with a screenshot and writeup for every level.
 - Passwords are not published.
 - Writeups: [Writeups](/Writeups/). 
-- Screenshots: [Findings/Over the Wire Bandit](/Findings/Over%20the%20Wire%20Bandit/).
+- Screenshots: [Findings/Over the Wire Bandit](/week-1/Findings/Over%20the%20Wire%20Bandit/).
 
 ## 5. Completed TryHackMe rooms (8)
 - Search Skills
@@ -63,11 +63,11 @@ DG Interns Hub
 - Pyramid of Pain
 - Intro to LAN
 
-Evidence: [TryHackMe](/Findings/TryHackMe/)
+Evidence: [Findings/TryHackMe](/week-1/Findings/TryHackMe/)
 
 ## 6. Theory notes 
 
-Read here: [Notes](/Notes/)
+Read here: [Notes](/week-1//Notes/)
 
 | # | Topic |
 |---|---|
@@ -86,7 +86,7 @@ Built a table containing 30+ commands under three columns
 - What It Does
 - When to Use It  
 
-Find it here: [Cheat Sheet](/Cheat%20Sheet/)
+Find it here: [Cheat Sheet](/week-1/Cheat%20Sheet/)
 
 ## 8. LinkedIn
 - Concept post: "SOC analyst vs penetration tester: what is the difference?" (5 bullet points)
