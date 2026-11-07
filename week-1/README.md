@@ -1,9 +1,12 @@
 # DG Interns Hub: Week 1
 
 ## Lab Setup, Linux and Networking Foundations
+
+**Program:** DG Interns Hub Cybersecurity Internship 
+
 **Intern:** CHUKWU PRAISEGOD 
 
-**Submission date:** 22 October 2026
+**Submission date:** 22 October, 2026
 
 ## Summary
 I built an isolated three-VM home lab in VirtualBox, practised Linux administration, mapped the lab network, completed OverTheWire Bandit levels 0 to 10 and eight TryHackMe rooms, and wrote eight theory notes plus a Linux cheat sheet. 
