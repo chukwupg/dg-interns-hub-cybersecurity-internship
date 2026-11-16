@@ -12,7 +12,7 @@ index=lab sourcetype="WinEventLog:Security" EventCode=4625
 - **MITRE:** T1110 (Brute Force).
 - **Why useful for L1:** first-line triage for credential-guessing attempts; a quick pivot into `Source_Network_Address` tells L1 whether to escalate as external or internal.
 
-![sp1](/week-4/Detection/t5-spl-1.png)
+![sp1](/week-4/Findings/attack-alert/t5-spl-1.png)
 
 ### 2. PowerShell process creation (Sysmon Event ID 1)
 ```spl
@@ -23,7 +23,7 @@ index=lab source="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode
 - **MITRE:** T1059.001 (PowerShell).
 - **Why useful for L1:** PowerShell is dual-use (admin tool and attacker tool) - this search gives L1 a fast first look at `CommandLine` to judge intent before escalating.
 
-![sp2](/week-4/Detection/t5-spl-2.png)
+![sp2](/week-4/Findings/attack-alert/t5-spl-2.png)
 
 ### 3. New user account creation (EventCode 4720)
 ```spl
@@ -34,7 +34,7 @@ index=lab sourcetype="WinEventLog:Security" EventCode=4720
 - **MITRE:** T1136.001 (Local Account).
 - **Why useful for L1:** account creation outside a change window or by an unexpected caller is a classic persistence indicator - cheap to check, high value.
 
-![sp3](/week-4/Detection/t5-spl-3.png)
+![sp3](/week-4/Findings/attack-alert/t5-spl-3.png)
 
 ### 4. SSH failures per source IP (tested against my own Hydra run)
 ```spl
@@ -47,7 +47,7 @@ index=lab source="/var/log/auth.log" "Failed password"
 - **MITRE:** T1110 (Brute Force).
 - **Why useful for L1:** simple threshold, low false-positive rate, catches the most common SSH attack pattern - this one fired for real against my Hydra test (confirmed in Findings/Triage Note 1).
 
-![sp4](/week-4/Detection/t5-spl-4.png)
+![sp4](/week-4/Findings/attack-alert/t5-spl-4.png)
 
 ### 5. Rare parent-child process pairs (Sysmon Event ID 1)
 ```spl
@@ -60,7 +60,7 @@ index=lab source="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode
 - **MITRE:** no single technique, general hunting/anomaly query, often precedes techniques like T1055 (Process Injection) or T1059 (various command/scripting).
 - **Why useful for L1:** not a direct alert, but a hunting query L1/L2 can run periodically to spot lineage that doesn't match a baseline.
 
-![sp5](/week-4/Detection/t5-spl-5.png)
+![sp5](/week-4/Findings/attack-alert/t5-spl-5.png)
 
 ## Scheduled alerts
 - **"SSH Bruteforce"** - built from search #4, scheduled every 1 hour, triggers when results > 0. 
