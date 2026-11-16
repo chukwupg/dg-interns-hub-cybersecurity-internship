@@ -5,4 +5,4 @@
 - **When:** 2026-11-15T08:35:48
 - **Where:** Source 192.168.98.130 → destination 192.168.98.129, port 22 (SSH).
 - **Why / Verdict:** **True positive** - this was my own authorized Hydra test against my own lab VM, not an external attacker. Confirmed by the raw event showing `sshd-session` failures from a known source IP I control.
-- **Next step:** In a real environment, I would isolate/block the source IP, force a password reset if any attempt succeeded, and check for any successful login immediately after the failed run. In this lab, no action needed beyond documenting — this was an intentional test.
+- **Next step:** In a real environment, I would isolate/block the source IP, force a password reset if any attempt succeeded, and check for any successful login immediately after the failed run. In this lab, no action needed beyond documenting, this was an intentional test.
