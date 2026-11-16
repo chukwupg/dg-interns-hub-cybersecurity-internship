@@ -7,16 +7,15 @@
 ## Folder structure
 
 ```
-DG Interns Hub/
-└── Week 4/
-├── Notes/           8 files, one per theory question (Q1-Q8)
-├── Writeups/        2 TryHackMe room writeups
-├── Findings/        screenshots + 3 triage notes
-├── Detections/      5 SPL searches + custom Wazuh rule
-├── Cheat Sheet/     SPL command table + SIEM alert table
+week-03/
+├── Notes/           (8 files, one per theory question (Q1-Q8))
+├── Writeups/        (2 TryHackMe room writeups)
+├── Findings/        (screenshots + 3 triage notes)
+├── Detections/      (5 SPL searches + custom Wazuh rule)
+├── Cheat Sheet/     (SPL command table + SIEM alert table)
 ├── Week4-Report.pdf
 ├── Week4-Presentation.pptx
-└── README.md — this file
+└── README.md        (this file)
 ```
 
 ## What I built
