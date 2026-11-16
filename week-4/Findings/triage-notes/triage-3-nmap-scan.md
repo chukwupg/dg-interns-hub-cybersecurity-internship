@@ -1,4 +1,3 @@
-<!-- triage-3-nmap-scan.md -->
 # Triage Note 3: Nmap SYN scan (manual search, no alert configured)
 
 - **Who:** No specific account — this is network-level recon, not an authentication event.
