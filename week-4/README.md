@@ -27,7 +27,9 @@ week-03/
 - **Custom Wazuh rule** (ID 100010, MITRE T1110) written and documented, but **not installed or tested** this week.
 
 ## Scope decision: Splunk fully built, Wazuh documented only
-My lab PC has 8 GB RAM. Splunk alone needs ~4 GB and my Windows VM needs 4 GB, which already fills the host. Wazuh needs another 4-8 GB on top of that. The brief explicitly allows building one SIEM fully and documenting the other tool's room/theory only, so I built Splunk end-to-end and wrote the Wazuh architecture notes (Q4) and the custom rule (Detections folder) from research rather than a live install. This is stated plainly wherever Wazuh is referenced.
+My lab PC has 8 GB RAM. Splunk alone needs ~4 GB and my Windows VM needs 4 GB, which already fills the host. Wazuh needs another 4-8 GB on top of that. 
+
+The brief explicitly allows building one SIEM fully and documenting the other tool's room/theory only, so I built Splunk end-to-end and wrote the Wazuh architecture notes (Q4) and the custom rule (Detections folder) from research rather than a live install. This is stated plainly wherever Wazuh is referenced.
 
 ## Lab environment
 - VMware Workstation Pro, isolated network 192.168.98.0/24
@@ -35,9 +37,6 @@ My lab PC has 8 GB RAM. Splunk alone needs ~4 GB and my Windows VM needs 4 GB, w
 - Kali (attacker): 192.168.98.130
 - Windows evaluation VM (log source): 192.168.98.131
 - Splunk server: dedicated headless Ubuntu Server VM
-
-## Notes on screenshots
-Screenshots in `Findings/` have been checked for passwords and other secrets before publishing. Original unblurred copies are kept outside this repo.
 
 ## LinkedIn
 - Concept post: "Why logs alone are not enough: what a SIEM adds"
