@@ -9,11 +9,11 @@
 ```
 DG Interns Hub/
 └── Week 4/
-├── Notes/ — 8 files, one per theory question (Q1-Q8)
-├── Writeups/ — 2 TryHackMe room writeups
-├── Findings/ — screenshots + 3 triage notes
-├── Detections/ — 5 SPL searches + custom Wazuh rule (documented)
-├── Cheat Sheet/ — SPL command table + SIEM alert table
+├── Notes/           8 files, one per theory question (Q1-Q8)
+├── Writeups/        2 TryHackMe room writeups
+├── Findings/        screenshots + 3 triage notes
+├── Detections/      5 SPL searches + custom Wazuh rule
+├── Cheat Sheet/     SPL command table + SIEM alert table
 ├── Week4-Report.pdf
 ├── Week4-Presentation.pptx
 └── README.md — this file
@@ -22,7 +22,7 @@ DG Interns Hub/
 ## What I built
 - **Splunk Enterprise 10.6.1.1** on a dedicated headless Ubuntu Server VM (192.168.98.x) in my isolated lab, with a `lab` index.
 - **Log ingestion:** Splunk Universal Forwarder on my Windows VM (Security + Sysmon logs) and my Ubuntu VM (`/var/log/auth.log`), all confirmed flowing into `index=lab`.
-- **Attack-to-alert:** Hydra SSH brute force (rockyou wordlist, first 20 entries) and an Nmap `-sS` scan, both run from Kali against my own Ubuntu VM — found and documented in Splunk.
+- **Attack-to-alert:** Hydra SSH brute force (rockyou wordlist, first 20 entries) and an Nmap `-sS` scan, both run from Kali against my own Ubuntu VM - found and documented in Splunk.
 - **5 SPL detections** covering Windows failed logons (4625), PowerShell execution (Sysmon EID 1), new user creation (4720), SSH brute force, and rare parent-child process pairs.
 - **2 scheduled alerts** ("SSH Bruteforce", "New User Created") and a **4-panel dashboard**.
 - **Custom Wazuh rule** (ID 100010, MITRE T1110) written and documented, but **not installed or tested** this week.
