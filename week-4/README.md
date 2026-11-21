@@ -1,8 +1,20 @@
 # Week 4: SIEM in Practice: Splunk, Wazuh and Log Ingestion
 
-**Goal:** Ingest endpoint and network logs into a free SIEM, search them, and turn attacker behaviour into alerts.
+**Program:** DG Interns Hub Cybersecurity Internship 
 
-**Deadline:** 15 Nov 2026, 11:59pm IST
+**Intern:** Chukwu PraiseGod 
+
+**Submission date:** 15 November, 2026
+
+## Summary
+
+This week I built a working SIEM pipeline end to end using Splunk, on a dedicated headless Ubuntu Server VM in my isolated 192.168.98.0/24 lab. I installed the Universal Forwarder on both my Windows VM (Security + Sysmon logs) and Ubuntu VM (`/var/log/auth.log`), and confirmed all three sources landing in the `lab` index.
+
+To test the pipeline against real activity rather than just theory, I ran my own SSH brute-force attack with Hydra (rockyou wordlist) and an Nmap SYN scan from Kali against my own Ubuntu VM. The Hydra attack was fully captured and traced through to a working alert; the Nmap scan produced no matching log entry, which I documented as a real visibility gap rather than a failure - host logs alone don't see network-level recon.
+
+From there I wrote 5 SPL detections and tested each one by running it against real log data in my lab. I saved 2 as scheduled alerts ("SSH Bruteforce", "New User Created") and built a 4-panel dashboard. Both alerts are configured correctly. I verified the underlying search logic, not the live alerting mechanism.
+
+Wazuh was not installed this week due to an 8GB RAM constraint on my host (Splunk plus my Windows VM already fill it). The brief allows building one SIEM fully and documenting the other, so I researched Wazuh's architecture and wrote a custom correlation rule (mapped to MITRE T1110) without running it live, this is flagged clearly wherever Wazuh is referenced, rather than presented as tested work.
 
 ## Folder structure
 
