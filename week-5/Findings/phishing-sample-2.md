@@ -60,17 +60,6 @@ Analyse one public phishing sample: read the headers, check URLs without clickin
 
 Total delay was 7 seconds. Every hop is Microsoft infrastructure and there is no external originating IP, so the reputation of 52[.]102[.]171[.]62 says little about this sender. MXToolbox flagged hops 1, 3 and 6 as "on a blacklist". Hops 1 and 6 are link-local or loopback addresses, so I treat those flags as parsing artefacts. Hop 3 is the Microsoft outbound IP above. The output did not say which list.
 
-## Received chain (read bottom to top)
-
-| Hop | Detail |
-|---|---|
-| 6 (origin) | Internal Exchange Online mailbox submission (`TYZPR03MB8781`, MAPI), 04:37:44 UTC |
-| 5 | `TYZPR03MB8781` to `TYQPR03MB9482` (Microsoft SMTP, TLS1.2) |
-| 4 | `TYDPR03CU002.outbound.protection.outlook[.]com` (52[.]102[.]171[.]62) to `DB3PEPF00008859.mail.protection.outlook[.]com` (TLS1.3) |
-| 3 to 1 | Internal Microsoft hops to the mailbox, last at 04:37:51 UTC |
-
-Every hop is Microsoft infrastructure and there is no external originating IP, so the reputation of 52[.]102[.]171[.]62 says little about this sender. `triage.py` truncates long Received lines, so some hop timestamps are cut off. 
-
 ## URL analysis (not clicked)
 
 | URL | Notes |
@@ -166,9 +155,6 @@ These are context for hunting, not confirmed parts of this email.
 - Subject and destination mismatch (French CPF theme versus English real-estate page)
 - Redirect destination flagged by 2 vendors and linked in urlscan to CPF-themed pages
 - Sender domain flagged as spam
-- Official-sounding subject about a government training account (CPF)
-- No DKIM signature and no DMARC record for the sender domain
-- ARC i=1 pass results that contradict the original and final results
 - Unusual MIME structure (`multipart/none`, script-style boundary), suggesting a scripted message
 
 ## Recommendations

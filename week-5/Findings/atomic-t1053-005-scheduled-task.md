@@ -26,7 +26,7 @@ Invoke-AtomicTest T1053.005 -TestNumbers 2 -Cleanup
 
 | Source | Event | Key fields | Result count |
 |---|---|---|---|
-| Sysmon | EID 1, `schtasks.exe` | CommandLine: [[ ]]; ParentImage: [[ ]]; User: [[ ]] | [[ ]] |
+| Sysmon | EID 1, `schtasks.exe` | CommandLine: SCHTASKS /Create /SC ONCE /TN spawn /TR C:\windows\system32\omd.exe /ST 20:10; ParentImage: C:\Windows \ System32\ cmd. exe; User: DESKTOP-G00VPHF\BasedOnBelieve | 1 |
 | Security | 4698 (task created) | none | **0** |
 
 ```

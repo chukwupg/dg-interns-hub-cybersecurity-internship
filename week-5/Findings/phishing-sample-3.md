@@ -111,7 +111,6 @@ The PDF is not a working delivery vehicle for malware or a link, so the attachme
 ![AlienVault OTX](../Findings/phishing-analysis/phish-s3-04-otx-3.png)
 ![AlienVault OTX](../Findings/phishing-analysis/phish-s3-04-otx-4.png)
 ![urlscan.io](../Findings/phishing-analysis/phish-s3-05-urlscan-1.png)
-![urlscan.io](../Findings/phishing-analysis/phish-s3-05-urlscan-2.png)
 ![urlscan.io listmanage1 DNS error](../Findings/phishing-analysis/phish-s3-05-urlscan-2.png)
 ![MXToolbox](../Findings/phishing-analysis/phish-s3-06-mxtoolbox-1.png)
 ![MXToolbox](../Findings/phishing-analysis/phish-s3-06-mxtoolbox-2.png)

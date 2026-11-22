@@ -46,7 +46,7 @@
 				},
 				{
 					"name": "Detection source",
-					"value": "Windows security log"
+					"value": "Wireshark, Snort"
 				}
 			],
 			"links": [],
