@@ -28,12 +28,12 @@ Drop the harmless EICAR test file on the Windows VM and find what Defender and S
 | Event Viewer - Windows Defender  Operational | Evend IDs 1116 and 1117, Action: Quarantine | `eicar-02-defender-eventviewer.png` |
 | Sysmon (Splunk and Event Viewer) | Nothing seen | `eicar-03-splunk-sysmon.png` |
 
-![Defender detection](/week-5/Findings/Eicar/eicar-01-defender-detection.png)
-![Defender event log](/week-5/Findings/Eicar/eicar-02-defender-eventviewer-eid1116.png)
-![Defender event log 2](/week-5/Findings/Eicar/eicar-02-defender-eventviewer-eid1117.png)
-![Sysmon / Splunk](/week-5/Findings/Eicar/eicar-03-splunk-sysmon.png)
-![FileHash](/week-5/Findings/Eicar/eicar-file-hash.png)
-![Virus Total](/week-5/Findings/Eicar/eicar-virus-total.png)
+![Defender detection](/week-5/Findings/safe-malware-triage/eicar/eicar-01-defender-detection.png)
+![Defender event log](/week-5/Findings/safe-malware-triage/eicar/eicar-02-defender-eventviewer-eid1116.png)
+![Defender event log 2](/week-5/Findings/safe-malware-triage/eicar/eicar-02-defender-eventviewer-eid1117.png)
+![Sysmon / Splunk](/week-5/Findings/safe-malware-triage/eicar/eicar-03-splunk-sysmon.png)
+![FileHash](/week-5/Findings/safe-malware-triage/eicar/eicar-file-hash.png)
+![Virus Total](/week-5/Findings/safe-malware-triage/eicar/eicar-virus-total.png)
 
 Splunk search used for Sysmon: 
 ```
