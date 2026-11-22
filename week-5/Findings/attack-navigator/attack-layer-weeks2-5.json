@@ -1,0 +1,283 @@
+{
+	"name": "Weeks 2-5 Observed Techniques",
+	"versions": {
+		"attack": "20",
+		"navigator": "5.3.2",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "Techniques observed in the Weeks 2-5 hands-on tasks.",
+	"filters": {
+		"platforms": [
+			"Linux",
+			"macOS",
+			"Windows",
+			"SaaS",
+			"Office 365",
+			"Google Workspace",
+			"IaaS",
+			"Network",
+			"Containers",
+			"PRE"
+		]
+	},
+	"sorting": 0,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": true,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false,
+		"expandedSubtechniques": "annotated"
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1046",
+			"tactic": "discovery",
+			"color": "#34d399",
+			"comment": "Week 2: nmap scan. Week 4: nmap SYN scans.",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Week observed",
+					"value": "2, 4"
+				},
+				{
+					"name": "Detection source",
+					"value": "Windows security log"
+				}
+			],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1110.001",
+			"tactic": "credential-access",
+			"color": "#34d399",
+			"comment": "Week 2: net use used to simulate failed logons (simulation, not a real guessing run). Week 4: SSH brute force with the rockyou wordlist.",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Week observed",
+					"value": "2, 4"
+				},
+				{
+					"name": "Detection source",
+					"value": "splunk"
+				}
+			],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1136.001",
+			"tactic": "persistence",
+			"color": "#66b1ff",
+			"comment": "Week 2: local account created with net user /add.",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Week observed",
+					"value": "2"
+				},
+				{
+					"name": "Detection source",
+					"value": "event viewer, splunk"
+				}
+			],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "persistence",
+			"color": "#66b1ff",
+			"comment": "Week 2: service created with sc.exe create.",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Week observed",
+					"value": "2"
+				},
+				{
+					"name": "Detection source",
+					"value": "splunk, event viewer"
+				}
+			],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1059.001",
+			"tactic": "execution",
+			"color": "#a78bfa",
+			"comment": "Week 3: simulated process and file creation. [confirm this was PowerShell]",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Week observed",
+					"value": "3"
+				},
+				{
+					"name": "Detection source",
+					"value": "splunk"
+				}
+			],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1566.002",
+			"tactic": "initial-access",
+			"color": "#ffb347",
+			"comment": "Samples 1, 2, 3: lure links (Chrome Web Store look-alike, Bing redirect to linklift.space, SES-tracked link to listmanage1.com). Manual triage with triage.py, urlscan.io, VirusTotal. No links opened.",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Week observed",
+					"value": "5"
+				},
+				{
+					"name": "Detection source",
+					"value": "Manual header/URL analysis (no gateway or SIEM rule)"
+				}
+			],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1566.001",
+			"tactic": "initial-access",
+			"color": "#ffb347",
+			"comment": "Sample 3 only: PDF attachment, SHA256 3351250345e4b65b906dd100aef7aafed2b4560c59f881d5112cb24acc661735. Low confidence: malformed PDF with no payload.",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Week observed",
+					"value": "5"
+				},
+				{
+					"name": "Detection source",
+					"value": "triage.py attachment hashing, VirusTotal Code Insight"
+				}
+			],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1656",
+			"tactic": "defense-evasion",
+			"color": "#ffb347",
+			"comment": "Sample 1: OKX display name on an unrelated domain. Sample 3: YETI giveaway display name.",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Week observed",
+					"value": "5"
+				},
+				{
+					"name": "Detection source",
+					"value": "Manual header review"
+				}
+			],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1566",
+			"tactic": "initial-access",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1110",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ff6666ff",
+			"#ffe766ff",
+			"#8ec843ff"
+		],
+		"minValue": 0,
+		"maxValue": 100
+	},
+	"legendItems": [
+		{
+			"color": "#66b1ff",
+			"label": "Week 2 only"
+		},
+		{
+			"color": "#a78bfa",
+			"label": "Week 3 only"
+		},
+		{
+			"color": "#34d399",
+			"label": "Weeks 2 and 4"
+		},
+		{
+			"color": "#ffb347",
+			"label": "Week 5 (phishing samples)"
+		}
+	],
+	"metadata": [],
+	"links": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
+}
