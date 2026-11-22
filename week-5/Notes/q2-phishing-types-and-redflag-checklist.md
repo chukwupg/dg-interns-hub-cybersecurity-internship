@@ -30,7 +30,13 @@ Compare the main phishing types and list the red flags that give them away.
 - Verify the request through a second channel you already trust.
 
 ## How this shows up in my lab
-- I analysed 3 public phishing samples this week (from phishing_pot): [[sample file names]].
+- I analysed 3 public phishing samples this week (from phishing_pot): sample-10.eml, sample-10002.eml, sample-100010.eml.
 - For each, I check the sender, headers, URLs (defanged) and attachment hashes, then give a verdict.
-- Type I think each sample is: [[phishing / spear / BEC ... for each sample]]
-- Red flags I found: [[list per sample]]
+- Verdict: 2 Malicious, 1 Suspicious 
+- Red flags I found: 
+    - Display name does not match the sender address
+    - Failed or missing authentication (SPF none, DKIM fail, no DMARC)
+    - Origin is a VPS, not the brand's own mail servers
+    - Look-alike extension name using Cyrillic characters
+    - Real Google domain used so the link looks trustworthy
+    - Fake rating/review notification as the lure

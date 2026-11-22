@@ -44,4 +44,4 @@ Check the IDs on the ATT&CK website before submitting, since names and numbering
 
 ## How this shows up in my lab
 - Detection sources: Snort rule for T1046 (Week 3), Splunk `linux_secure` logs and my "SSH Bruteforce" alert (Week 4), Windows Security events 4625 and 4720/4624, and Sysmon.
-- These techniques go into my ATT&CK Navigator layer with the Week 5 Atomic tests (T1059.001, T1136.001, T1053.005): [[Navigator screenshot link]]
+- These techniques go into my ATT&CK Navigator layer with the Week 5 Atomic tests (T1059.001, T1136.001, T1053.005): [Navigator layer](../Findings/attack-navigator/attack-layer-weeks2-5.svg)

@@ -34,4 +34,4 @@ The model is a loop: lessons from phase 4 feed back into phase 1.
 - **Preparation:** Sysmon on the Windows VM (192.168.98.131), auditd on Ubuntu (192.168.98.129), and Splunk with the `lab` index collecting logs.
 - **Detection and Analysis:** my Splunk alerts "SSH Bruteforce" and "New User Created", and the SPL searches I wrote in Week 4.
 - **Containment (practice):** isolate the Windows VM, disable the test account. 
-- **Post-incident:** [[detection gaps found during the Atomic tests and what I will change]]
+- **Post-incident:** scheduled task creation (4698) is not audited in the Security log (Other Object Access Events = No Auditing). Recommended action is to enable Other Object Access Events auditing and forward 4698 to Splunk.

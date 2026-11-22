@@ -41,7 +41,6 @@ Authentication-Results: mx.example.net;
 - DMARC failed: with `p=reject` this message should be blocked. Likely spoofing.
 
 ## How this shows up in my lab
-- Real headers from my phishing samples: [[paste the Authentication-Results line for each sample]]
-- Results I saw: SPF [[pass/fail/none]], DKIM [[...]], DMARC [[...]] for sample [[name]]
-- I can cross-check with the MXToolbox email header analyzer: [[screenshot link]]
+- Real headers from my phishing samples
+- Results I saw: SPF fail, DKIM fail, DMARC fail, for sample-1.
 - My own lab has no mail server, so I only analyse public samples.

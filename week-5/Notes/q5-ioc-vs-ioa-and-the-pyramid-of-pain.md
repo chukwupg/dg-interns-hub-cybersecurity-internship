@@ -32,7 +32,7 @@ Created by David Bianco. It shows how much pain it causes the attacker when defe
 - ATT&CK techniques sit at the TTP level.
 
 ## How this shows up in my lab
-- **Hash level:** the EICAR file hash is a hash IOC, and an antivirus blocks it by signature: [[Defender detection screenshot]]
+- **Hash level:** the EICAR file hash is a hash IOC, and an antivirus blocks it by signature. 
 - **IP level:** the Kali attacker IP 192.168.98.130 appears in my Splunk results for the Hydra and Nmap tests.
 - **Behaviour level (IOA/TTP):** my Snort rule for Nmap SYN scans and my SPL search for repeated SSH failures detect behaviour, not a specific IP or file.
-- Phishing sample IOCs (defanged URLs, domains, hashes): [[IOC table from my incident report]]
+- Phishing sample IOCs (defanged URLs, domains, hashes)

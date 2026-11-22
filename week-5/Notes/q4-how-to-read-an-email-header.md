@@ -32,6 +32,6 @@ Explain the main header fields and what suspicious values look like.
 6. Give a verdict: benign, suspicious or malicious, with reasons.
 
 ## How this shows up in my lab
-- I read the headers of 3 phishing samples and compare the fields above: [[table of findings per sample]]
-- I check origin IPs and domains with AbuseIPDB, OTX and VirusTotal: [[results]]
-- Tools: MXToolbox header analyzer and CyberChef (to decode encoded text): [[screenshot links]]
+- I read the headers of 3 phishing samples and compare the fields above
+- I check origin IPs and domains with AbuseIPDB, OTX and VirusTotal
+- Tools: MXToolbox header analyzer and CyberChef, (to decode encoded text) in addition to a python email header parser [emails-and-triage-script](../Findings/phishing-analysis/emails-and-traige-script/)
