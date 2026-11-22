@@ -1,0 +1,61 @@
+# TryHackMe: Intro to Cyber Threat Intel
+
+**Week 5 | Folder: Writeups**
+
+| | |
+|---|---|
+| Room | Intro to Cyber Threat Intel |
+| Link | https://tryhackme.com/room/cyberthreatintel |
+| Difficulty / time (as listed) | Easy, about 45 minutes |
+| Date completed | 20/11/2026 |
+| Status | Completed |
+
+## Goal
+Learn what cyber threat intelligence (CTI) is, its classifications, the intelligence lifecycle, and the standards and frameworks used to share it.
+
+## Task overview
+
+| Task | Topic | What I did |
+|---|---|---|
+| 1 | Introduction | Read the aims of the room |
+| 2 | Cyber threat intelligence | Learned the classifications of intel |
+| 3 | CTI lifecycle | Learned the cycle from requirements to feedback |
+| 4 | CTI Standards and frameworks | Read about ATT&CK, STIX and TAXII, the Kill Chain and the Diamond Model |
+| 5 | Practical Analysis | Static web-based SIEM dashboard for practicing threat intelligence gathering  |
+
+## Notes 
+
+**Classifications of threat intel**
+
+| Type | Focus | Example use |
+|---|---|---|
+| Strategic | High-level risk for decision makers | Board decisions on risk |
+| Technical | Atomic artefacts such as IPs and hashes | Blocklists |
+| Tactical | Adversary TTPs | Detection rules |
+| Operational | Motives and details of specific attacks | Incident response planning |
+
+**Lifecycle:** planning and direction, collection, processing, analysis, dissemination, feedback. It repeats.
+
+**Frameworks and standards**
+- **MITRE ATT&CK:** a knowledge base of adversary behaviour.
+- **STIX and TAXII:** a format for describing intel and a way to exchange it.
+- **Cyber Kill Chain:** the stages of an intrusion.
+- **Diamond Model:** adversary, victim, capability and infrastructure.
+
+## Commands and tools
+No terminal commands. 
+
+## Screenshots
+![Room progress](/week-5/Findings/TryHackMe/intro-to-cyber-threat-intel.png)
+
+Do not screenshot answers or flags.
+
+## How this shows up in my lab
+- My phishing IOC tables are **technical** intel, and my ATT&CK Navigator layer and detection gaps are **tactical** intel.
+- I looked up IPs, domains and hashes in VirusTotal, AlienVault OTX, AbuseIPDB and urlscan.io, which are CTI sources.
+- This supports my Q5 and Q6 notes and the incident report.
+
+## What I learned
+Intelligence is useful when it matches who will use it. 
+
+The CTI lifecycle includes feedback so it improves after every cycle
