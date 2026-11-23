@@ -154,5 +154,5 @@ VirusTotal, urlscan.io, AbuseIPDB, AlienVault OTX, MXToolbox, CyberChef, public 
 - Screenshots were checked for sensitive information before publishing. No passwords, flags or room answers are included.
 
 ## LinkedIn
-- Concept post, "How to spot a phishing email using headers": [[link]]
+- Concept post, "How to spot a phishing email using headers": https://lnkd.in/p/ezYMxAzW
 - Weekly post (incident report summary and ATT&CK Navigator screenshot, tagging DG Interns Hub): https://lnkd.in/p/eK8Zs4Yz
