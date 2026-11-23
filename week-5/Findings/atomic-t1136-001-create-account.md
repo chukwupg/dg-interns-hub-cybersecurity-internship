@@ -24,7 +24,7 @@ Get-Date
 Invoke-AtomicTest T1136.001 -TestNumbers 4 -Cleanup
 ```
 
-![Test run](../Findings/Atomic/atomic-t1136-01-run.png)
+![Test run](../Findings/atomic-red-team/atomic-t1136-01-run.png)
 
 ## Evidence
 
@@ -42,14 +42,14 @@ index=lab host="DESKTOP-G00VPHF" EventCode=1 ("net user" OR net1.exe OR net.exe)
 | table _time, Image, CommandLine, ParentImage, User
 ```
 
-![Security 4720 in Splunk](../Findings/Atomic/atomic-t1136-02-splunk-4720.png)
-![Sysmon in Splunk](../Findings/Atomic/atomic-t1136-03-splunk-sysmon.png)
+![Security 4720 in Splunk](../Findings/atomic-red-team/atomic-t1136-02-splunk-4720.png)
+![Sysmon in Splunk](../Findings/atomic-red-team/atomic-t1136-03-splunk-sysmon.png)
 
 ## Alert check
 - **"New User Created" triggered:** Yes
 - Time Triggered: Nove 21, 2026 6:02:23 AM 
 
-![Triggered alerts](../Findings/Atomic/atomic-alerts-01-triggered.png)
+![Triggered alerts](../Findings/atomic-red-team/atomic-alerts-01-triggered.png)
 
 ## Detection
 - **Existing detection fired:** Yes

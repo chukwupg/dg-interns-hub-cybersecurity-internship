@@ -15,8 +15,8 @@ Run an obfuscated PowerShell command with Atomic Red Team and find the evidence 
 - Windows VM snapshot taken first: `week5-clean-before-atomics`
 - Atomic Red Team installed in `C:\AtomicRedTeam` with a Defender exclusion for that folder (removed afterwards)
 
-![Snapshot](../Findings/Atomic/a-01-snapshot.png)
-![Exclusion](../Findings/Atomic/exclusion-list.png)
+![Snapshot](../Findings/atomic-red-team/a-01-snapshot.png)
+![Exclusion](../Findings/atomic-red-team/exclusion-list.png)
 
 ## Commands
 ```powershell
@@ -32,7 +32,7 @@ Get-Date
 - Test output: `Hello, from PowerShell!`, exit code 0
 - Run time: 7:11:38 to 7:14:22 AM (Windows time, +01:00)
 
-![Test run](../Findings/Atomic/atomic-t1059-01-run.png)
+![Test run](../Findings/atomic-red-team/atomic-t1059-01-run.png)
 
 ## Evidence in Sysmon and Splunk
 
@@ -48,9 +48,9 @@ index=lab host="DESKTOP-G00VPHF" EventCode=1 Image="*\\powershell.exe" CommandLi
 | table _time, host, EventCode, Image, CommandLine, ParentImage, User, ProcessId
 ```
 
-![Raw Sysmon event](../Findings/Atomic/atomic-t1059-02-sysmon.png)
-![Splunk search result](../Findings/Atomic/atomic-t1059-03-splunk.png)
-![Process chain](../Findings/Atomic/atomic-t1059-process-chain.png)
+![Raw Sysmon event](../Findings/atomic-red-team/atomic-t1059-02-sysmon.png)
+![Splunk search result](../Findings/atomic-red-team/atomic-t1059-03-splunk.png)
+![Process chain](../Findings/atomic-red-team/atomic-t1059-process-chain.png)
 
 **Note:** my first searches matched only part of the encoded string and returned nothing, because Splunk searches whole tokens. A wildcard on `CommandLine` fixed it.
 

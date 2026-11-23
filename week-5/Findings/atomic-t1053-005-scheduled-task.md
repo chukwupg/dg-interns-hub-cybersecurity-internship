@@ -20,7 +20,7 @@ Get-Date
 Invoke-AtomicTest T1053.005 -TestNumbers 2 -Cleanup
 ```
 
-![Test run](../Findings/Atomic/atomic-t1053-01-run.png)
+![Test run](../Findings/atomic-red-team/atomic-t1053-01-run.png)
 
 ## Evidence
 
@@ -37,11 +37,11 @@ index=lab host="DESKTOP-G00VPHF" EventCode=1 schtasks earliest=-30m
 index=lab host="DESKTOP-G00VPHF" EventCode=4698 earliest=-30m
 ```
 
-![Splunk search](../Findings/Atomic/atomic-t1053-03-splunk.png)
+![Splunk search](../Findings/atomic-red-team/atomic-t1053-03-splunk.png)
 
 **No 4698 Event**
 
-![No 4698 results](../Findings/Atomic/atomic-t1053-04-no-4698.png)
+![No 4698 results](../Findings/atomic-red-team/atomic-t1053-04-no-4698.png)
 
 ## Why there was no Event 4698
 I checked the audit policy:
@@ -50,7 +50,7 @@ auditpol /get /subcategory:"Other Object Access Events"
 ```
 It showed **No Auditing**, so Windows never wrote Event 4698.
 
-![auditpol output](../Findings/Atomic/atomic-t1053-05-auditpol.png)
+![auditpol output](../Findings/atomic-red-team/atomic-t1053-05-auditpol.png)
 
 ## Detection
 - **Existing detection fired:** No.
@@ -75,9 +75,9 @@ auditpol /set /subcategory:"Other Object Access Events" /success:enable /failure
     - Account Name: BasedOnBelive 
     - Account Domain: DESKTOP-G00VPHF
 
-![auditpol enabled](../Findings/Atomic/atomic-t1053-06-auditpol-enabled.png)
-![Test rerun](../Findings/Atomic/atomic-t1053-01-rerun.png)
-![4698 found](../Findings/Atomic/atomic-t1053-07-4698-found.png)
+![auditpol enabled](../Findings/atomic-red-team/atomic-t1053-06-auditpol-enabled.png)
+![Test rerun](../Findings/atomic-red-team/atomic-t1053-01-rerun.png)
+![4698 found](../Findings/atomic-red-team/atomic-t1053-07-4698-found.png)
 
 ## What I learned
 4698 initially didn't show up in my splunk SPL search because it had no audit settings in my Windows machine, but after I turned the Success and Failure audit setting using `auditpol`, the log showed up. 
